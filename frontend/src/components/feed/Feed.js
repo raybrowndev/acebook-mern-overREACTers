@@ -36,24 +36,31 @@ const Feed = ({ navigate }) => {
     if(token) {
       return(
         <>
-          <div><NavBar /></div>
-          <div><Find posts={ posts } navigate={navigate} /></div>
-  
-          <div className='feedcontainer'>
-            <h2>Home</h2>
-          <div className='newPostcontainer'>  <h3>Compose</h3>
-          <NewPost />
-          </div>
-            <h3>All Posts</h3>
-            <div id='feed' role="feed">
-              {posts
-              .slice()
-              .sort((a, b) => new Date(b.date) - new Date(a.date))
-              .map((post) => (
-                  <article key={ post._id }><Post post={ post } /></article> )
-              )}
-            </div>
-          </div>
+        <div className='main-container'>
+              <div className="search-container">
+                  <Find posts={ posts } navigate={navigate} />
+              </div>
+          
+              <div className='navbar-container'>
+                <NavBar />
+              </div>
+              
+              <div className='feedcontainer'>
+                  <h2>Home</h2>
+              <div className='newPostcontainer'>  <h3>Compose</h3>
+                          <NewPost />
+              </div>
+                  <h3>All Posts</h3>
+                  <div id='feed' role="feed">
+                    {posts
+                    .slice()
+                    .sort((a, b) => new Date(b.date) - new Date(a.date))
+                    .map((post) => (
+                        <article key={ post._id }><Post post={ post } /></article> )
+                    )}
+                  </div>
+              </div>
+        </div>
         </>
       )
     } else {

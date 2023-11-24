@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { FindContext } from '../findContext/FindContext.js';
+import './Find.css'
 
 
 const Find = ({posts, comments, navigate}) => {
@@ -24,13 +25,13 @@ const Find = ({posts, comments, navigate}) => {
   };
 
   return (
-    <div>
+    <div className='searchbar'>
       <input
         type="text"
         placeholder="Search..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}/>
-      <button onClick={handleSearch} >Search</button>
+      <button className='searchbutton' onClick={handleSearch} >Search</button>
       
         <div>{searchResults}</div>
     </div>

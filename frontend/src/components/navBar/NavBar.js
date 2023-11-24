@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Acebook from '../auth/static/Acebook.png';
 import './NavBar.css'
+import Find from '../find/Find';
 
 const NavBar = () => {
   const navigate = useNavigate();
