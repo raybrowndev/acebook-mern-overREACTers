@@ -47,7 +47,7 @@ const Feed = ({ navigate }) => {
               
               <div className='feedcontainer'>
                   <h2>Home</h2>
-              <div className='newPostcontainer'>  <h3>Compose</h3>
+              <div className='newPostcontainer'>
                           <NewPost />
               </div>
                   <h3>All Posts</h3>
