@@ -47,6 +47,9 @@ const Feed = ({ navigate }) => {
               
               <div className='feedcontainer'>
                   <h2>Home</h2>
+              <div className='newPostcontainer'>  <h3>Compose</h3>
+                          <NewPost />
+              </div>
                   <h3>All Posts</h3>
                   <div id='feed' role="feed">
                     {posts
