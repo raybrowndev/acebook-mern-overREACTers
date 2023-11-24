@@ -6,11 +6,18 @@
 .search-container {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 100;
+    left: 35%;
+    transform: translateX(-50%);
     width: 70%;
-    z-index: 1; /* Ensure the overlay is on top */
+    z-index: 1;
     margin-top: 20px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .search-container {
+        width: 90%;
+    }
 }
 
 .feedcontainer {
@@ -22,7 +29,7 @@
 .newPostcontainer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     display: flex;
     flex-direction: column;

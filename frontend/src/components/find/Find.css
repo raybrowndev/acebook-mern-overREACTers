@@ -21,16 +21,15 @@
 .searchbar {
     display: flex;
     align-items: center;
-    margin-left: 630px;
     margin-bottom: px;
 }
 
 .searchbar input {
-
-padding: 8px;
-border: 1px solid #ccc;
-border-radius: 5px;
-width: 600px;
+    margin-left: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
 }
 
 .searchbar .searchbutton {
