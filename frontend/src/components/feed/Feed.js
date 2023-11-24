@@ -36,8 +36,7 @@ const Feed = ({ navigate }) => {
     if(token) {
       return(
         <>
-          <div><NavBar /></div>
-          <div><Find posts={ posts } navigate={navigate} /></div>
+          <div><NavBar posts={ posts } navigate={navigate} /></div>
           <div className='feedcontainer'>
             <h2>Home</h2>
             <h3>All Posts</h3>

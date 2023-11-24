@@ -8,7 +8,10 @@
     background-color: #87CEEB;
     color: #87CEEB;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
 
+.logo-container {
+    margin-right: 100px; /* Add margin between logo and search bar */
 }
 
 .logo {
@@ -16,8 +19,8 @@
     height: auto; /* Maintain the aspect ratio */
     margin-left: 30px; /* Adjust margin as needed for spacing */
     border: none;
-    margin-bottom: 20px;
-
+    margin-bottom: -30px;
+    margin-top: 60px;
 }
 
 .buttoncontainer {
@@ -44,4 +47,5 @@
     background-color: #4682b4;
     }
 }
+
 
